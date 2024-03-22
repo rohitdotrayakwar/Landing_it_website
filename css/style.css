@@ -1,0 +1,579 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0  ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+li {
+    list-style: none;
+}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color:#000000d5;
+}
+
+i{
+    color: #1cc9e3;
+}
+
+/* *******Actual CSS Start ***** */
+
+.header{
+    width: 100%;
+    height: 100vh;
+   background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 168, 223, 0.3),rgba(10,
+        168,
+        223,
+        0.3)), url('../img/office1.jpg');
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 77%, 0 0);
+    position: relative;
+  
+}
+
+.header:before{
+    content: " ";
+    position: absolute;
+    top: 0 ;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: .3;
+    z-index: -2;
+    background: linear-gradient(to right, #7e2dc0 0%, #a3c6e0 0%, #59B4C3 100%);
+}
+
+.navbar .nav-item a {
+    color: #ffffff !important;
+    /* use hex code for complete white color */
+    font-weight: bold;
+    position: relative;
+    /* use position property instead of z-index */
+    z-index: 1000;
+    /* keep z-index if needed for other styling purposes */
+}
+.nav-item a:hover {
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 5ms linear;
+}
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: #fff;
+    text-align: center  ;
+    position: relative;
+}
+
+.center-div{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%   ;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform:translate(-50%, -50%);
+}
+
+.header-buttons a{
+    border: 1px solid white;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height:1.4;
+    transition: all 1s linear;
+    text-align: center;
+
+}
+
+.header-buttons a:hover{
+    background-color: #1cc9e3; 
+    color: #ffffff; 
+    text-decoration: none;
+    box-shadow: 0 0 20px o rbga(0,0,0,.3);  
+    font-size: 14px;
+    transition: all 5ms linear;
+    
+}
+
+.center-div p{
+    font-size: 1.3rem;
+    padding:  10px 0 20px 0;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rbga(0,0,0,0.3); 
+}
+
+/********* css for extradiv header****/
+.header-extradiv{  
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+   text-align: center;
+      
+}
+
+.extra-div{
+  background:#fff;
+  border: medium none;
+  padding: 50px!important;
+  border-radius: 3px;
+  transition: all  1s linear;
+}
+
+.extra-div:hover {
+   
+     border-radius: 23px;
+    box-shadow: 0 0 8px rgba(28, 225, 225, 0.938) !important;
+    transition: all .2s linear;
+    transform: translate(0,-10%) scale(.9);
+
+}
+.extra-div h2, .servicediv h2{
+    font-size: 0.9rem;
+    margin: 20px 0 15px  0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+
+/********** Extra header Section ******/
+
+.serviceoffers{
+    background-color: #f7f7f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.headings{
+    margin-bottom: 50px;
+}
+
+.headings h1{
+    font-size:1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.names h1{
+    color: #555555;
+    font-size: 0.9rem  ;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.service-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress{
+    background-color: #423f3f;
+    height: 0.6rem!important;
+    margin-bottom: 25px!important;
+}
+
+
+/* CSS FOR AWARDS WONS */
+.project-work{
+    margin: 100px 0;
+}
+
+.project-work h1{
+    font-size:  2rem;
+    text-align: center;
+}
+
+/* pricing css  start*/
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.pricing:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -2;
+    background: linear-gradient(160deg, #1cc9e3 55%,#ffffff 0%);
+}
+ .money{
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -1px
+ }
+  .card{
+    transition: all 0.4s linear;
+  }
+
+  .card-header{
+    font-size: 1.6rem ;
+    font-weight: bold;
+    background:#fff!important;
+    padding: 25px 9!important;
+  }
+
+  .card-body{
+    padding: 30px 0!important;
+  }
+
+  .card-body li{
+    margin: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+
+  }
+
+  .card-foote{
+    background: white !important;
+    padding: 30px 0px !important;
+  }
+
+  .card-footer a {
+      border: 1px solid #1cc9e3;
+      border-radius: 100px;
+      margin: 0 5px;
+      padding: 12px 35px;
+      outline: none;
+      color: #1cc9e3;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.4;
+      transition: all 1s linear;
+      text-align: center;
+      font-weight: bold;
+
+  }
+
+  .card-footer a:hover {
+      background-color: #1cc9e3;
+      color: #ffffff;
+      text-decoration: none;
+      box-shadow: 0 0 20px o rbga(0, 0, 0, .3);
+      font-size: 14px;
+      transition: all 5ms linear;
+
+  }
+
+  .card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 3);
+    
+
+  }
+
+  .card:hover, .card:hover .money{
+    color: #1cc9e3;
+  }
+  /* pricing css  End*/
+
+/* Customer Feedbadck css  start*/
+
+.happyclient{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.box{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.box:hover{
+    background-color: #16c9f6;
+}
+
+.box:hover p{
+    color: white;
+}
+
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: -60px!important;
+}
+
+.carousel-indicators li{
+    background-color: #16c9f6!important;
+}
+.box a{
+    position: relative;
+
+}
+
+.box a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+.box a:after{
+    content: "\f10d";
+    font-family: FontAwesome;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:linear-gradient(to right/ #1e5700 0%, #3ccdbb 0%, #16c9f6 5%);
+    color:  rgb(255, 255, 255);
+    position: absolute;
+    top: 120%;
+    left:70%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2aafd0;
+}
+
+.box h1{
+    font-size: 13px;
+    font-size: 700;
+    color:#000000;
+    margin-bottom: 10px;
+}
+
+.box h2{
+    font-size: 13px;
+    font-weight: 400px;
+    color: #141111bb;
+    margin-bottom: 20px;
+}
+/* Customer Feedbadck css  End*/
+
+
+/*  Contact Us Start*/
+
+.contactus{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0;
+    position: relative;
+}
+
+.contactus:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:linear-gradient( 330deg, #1cc9e3 55%,#ffffff 0%);
+    z-index: -1;
+}
+
+.form-button button{
+        border: 1px solid white;
+        border-radius: 100px;
+        margin: 0 5px;
+        padding: 12px 35px;
+        outline: none;
+        color: #f3f3f3;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.4;
+        transition: all 1s linear;
+        text-align: center;
+        background-color: #2b7bdd41;
+}
+
+.form-button button:hover{
+    background-color: #ffffff;
+        color: #1fcae4;
+        text-decoration: none;
+        box-shadow: 0 0 20px o rbga(0, 0, 0, .3);
+        font-size: 14px;
+        transition: all 5ms linear;
+
+}
+
+::placeholder{
+    font-size: 0.85rem;
+}
+
+
+/*  Subscribe Us Start*/
+
+.newsletter{
+    width: 100%;
+    height: auto;
+    margin: 80 auto;
+    padding: 80px 0;
+    position: relative;
+
+}
+
+.news-input{
+    border-radius: 100px 0px 0px  100px!important;
+    min-width: 150px;
+    min-width: 45px;
+}
+
+.subscribe{
+    color: #fff!important;
+    background: #2aafd0 !important;
+    border-radius: 0 100px 100px 0!important;
+    min-width: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.input-group-text:hover {
+    color: #ffffff!important;
+    background: #f71e1e!important;
+    cursor: pointer;
+}
+
+.input-group-text:active {
+    
+    color: #ffffff !important;
+    background: #f7871e !important;
+    
+}
+
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background-color:#1cc9e3;
+    position: relative;
+}
+
+.footersection p{
+    color: #fff;
+
+}
+
+.footersection li a {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+
+}
+
+.footersection h3{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+
+/* #myBtn{
+    
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: white;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+} */
+
+#myBtn {
+  /* Positioning */
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+
+  /* Styling */
+  border: none;
+  background-color: #34a482;
+  color: white;
+  padding: 10px 20px; /* Added horizontal padding for a more balanced look */
+  border-radius: 10px;
+
+  /* Accessibility */
+  cursor: pointer; /* Add a pointer cursor to indicate that the button is clickable */
+  transition: background-color 0.5s ease; /* Add a smooth transition for a better user experience */
+}
+
+/* Hover state */
+#myBtn:hover {
+  background-color: #03045e; /* Darker shade of black on hover */
+}
+
+/* Active state */
+#myBtn:active {
+    background-color: #263238;
+    /* Even darker shade of black when button is pressed */
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    /* Add subtle shadow for realism */
+}
+
+/* medeia queries */
+ @media (max-width: 768px) {
+    .nav-item{
+        text-align: center!important;
+    }
+    
+    .pricing,.happyclient, .contactus {
+        height: auto;
+        margin-top:  30px;
+    }
+      .card-second{
+        transform: translate(0px);
+        margin: 30px 0;
+      }
+      .contactus p{
+        padding: 0 50px;
+      }
+         
+      .footer-div:nth-child(2){
+
+        text-align: left!important;
+      }
+
+          .footer-div {
+    
+              margin: 30px 0 ;
+              
+          }
+                 
+
+ }
