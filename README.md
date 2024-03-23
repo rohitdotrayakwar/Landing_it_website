@@ -39,7 +39,7 @@ To get a copy of the project up and running on your local machine, follow these 
 
 ## Website
 
-Visit our website [here]([https://www.landingit.com](https://rohitdotrayakwar.github.io/Landing_it_website/)) to see the live version.
+Visit our website [here](https://rohitdotrayakwar.github.io/Landing_it_website/) to see the live version.
 
 ## Contributing
 
