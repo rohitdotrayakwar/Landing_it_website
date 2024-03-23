@@ -19,17 +19,44 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--Phone CSS -->
 <style>
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-    }
+     input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+         -webkit-appearance: none;
+     }
 
     
+     ::-webkit-scrollbar{
+        width: 10px;
+     }
+     ::-webkit-scrollbar-thumb{
+        background: linear-gradient(transparent, #189ec3);
+        border-radius: 6px;
+     }
+     ::-webkit-scrollbar-thumb:hover{
+        background: linear-gradient(transparent,rgb(108, 108, 211));
+        background-color: black ;
+     }
+
+  
+     .count {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        /* Hide horizontal scrollbar */
+
+  
+          
 </style>
 
+
+
 <title>It_Website</title>
+<link rel="icon" type="image/png" sizes="512x512" href="./img/icon.jpg" >
   </head>
   <body>
+    <div class="con">
+    
    <div class="header" id="topheader">
     
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -207,34 +234,31 @@
 <!-- offer section ends -->
 
     <!-- Project done start -->
-        <section class="project-work" >
+        <section class="project-work">
             <div class="container heading text-center">
-               <p class="text-center font-weight-bold">MORE THAN 2000 WEBSITES CREATED </p>
+                <p class="text-center font-weight-bold">MORE THAN 2000 WEBSITES CREATED </p>
             </div>
-
+        
             <div class="container d-flex justify-content-around align-item-center text-center">
                 <div>
-                    <h1 class="count" >15000</h1>
+                    <h1 class="count" id="count1" data-target="15000">0</h1>
                     <p>CMS Installation</p>
                 </div>
                 <div>
-                    <h1 class="count">700</h1>
+                    <h1 class="count" id="count2" data-target="700">0</h1>
                     <p>Working On</p>
                 </div>
                 <div>
-                    <h1 class="count">2500</h1>
+                    <h1 class="count" id="count3" data-target="2500">0</h1>
                     <p>Happy Client</p>
                 </div>
                 <div>
-                    <h1 class="count">100</h1>
+                    <h1 class="count" id="count4" data-target="100">0</h1>
                     <p>CMS Installation</p>
                 </div>
             </div>
-
+        
         </section>
-    
-    <!-- Project done End -->
-
 
     <!-- our pricing starts -->
     <section class="pricing" id="pricingdiv">
@@ -327,7 +351,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-12">
                         <div class="box">
-                            <a href="#"><img src="./img/office.jpg" class="img-fluidi img-thumbnail"></a>
+                            <a href="#"><img src="./img/rohit.png" class="img-fluidi img-thumbnail"></a>
                             <p class="m-4">Lorem ipsum dolor sit amet
                                 consectetur, adipisicing elit. Eaque,
                                 aut unde nesciunt?</p>
@@ -353,7 +377,7 @@
                 
                     <div class="col-lg-4 col-md-4 col-12">
                         <div class="box">
-                            <a href="#"><img src="./img/office.jpg" class="img-fluidi img-thumbnail"></a>
+                            <a href="#"><img src="./img/rohit.png" class="img-fluidi img-thumbnail"></a>
                             <p class="m-4">Lorem ipsum dolor sit amet
                                 consectetur, adipisicing elit. Eaque,
                                 aut unde nesciunt?</p>
@@ -385,7 +409,7 @@
                 
                     <div class="col-lg-4 col-md-4 col-12">
                         <div class="box">
-                            <a href="#"><img src="./img/office.jpg" class="img-fluidi img-thumbnail"></a>
+                            <a href="#"><img src="./img/new.jpg" class="img-fluidi img-thumbnail"></a>
                             <p class="m-4">Lorem ipsum dolor sit amet
                                 consectetur, adipisicing elit. Eaque,
                                 aut unde nesciunt?</p>
@@ -429,7 +453,7 @@
                 
                     <div class="col-lg-4 col-md-4 col-12">
                         <div class="box">
-                            <a href="#"><img src="./img/office.jpg" class="img-fluidi img-thumbnail"></a>
+                            <a href="#"><img src="./img/rohit.png" class="img-fluidi img-thumbnail"></a>
                             <p class="m-4">Lorem ipsum dolor sit amet
                                 consectetur, adipisicing elit. Eaque,
                                 aut unde nesciunt?</p>
@@ -586,18 +610,27 @@
             </div>
 
     </footer>
+</div>
+<script>
+    document.addEventListener('mousemove', (e) => {
+        const cursorLight = document.createElement('div');
+        cursorLight.classList.add('cursor-light');
+        document.body.appendChild(cursorLight);
 
+        cursorLight.style.left = e.pageX - cursorLight.offsetWidth / 2 + 'px';
+        cursorLight.style.top = e.pageY - cursorLight.offsetHeight / 2 + 'px';
+
+        setTimeout(() => {
+            cursorLight.remove();
+        }, 300);
+    });
+</script>
 
 
 <!-- Bootstrap JS, jQuery, and Popper.js -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- CounterUp Plugin -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
-    integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
-    integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
-    crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
@@ -611,14 +644,65 @@
     });
 </script>
 
+<script>
+    function startCounting() {
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2 // Trigger when 20% of the element is visible
+        };
 
-    <script>
-       
-            $('.count').counterUp({
-                delay: 10,
-                time: 2000
+        const observer = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    startCountingAnimation(entry.target);
+                }
             });
-    </script>
+        }, options);
+
+        const countElements = document.querySelectorAll('.count');
+        countElements.forEach(function (element) {
+            observer.observe(element);
+        });
+    }
+
+    function startCountingAnimation(element) {
+        const target = parseInt(element.getAttribute('data-target'));
+        const duration = 2000; // Duration in milliseconds
+        const increment = Math.ceil(target / (duration / 10)); // Increment value
+
+        let current = 0;
+
+        const timer = setInterval(function () {
+            current += increment;
+            element.textContent = current;
+            if (current >= target) {
+                element.textContent = target;
+                clearInterval(timer);
+            }
+        }, 10);
+    }
+
+    // Reset counters when they become invisible
+    function resetCounters() {
+        const countElements = document.querySelectorAll('.count');
+        countElements.forEach(function (element) {
+            element.textContent = '0';
+        });
+    }
+
+    // Start counting when the page loads
+    window.addEventListener('load', startCounting);
+
+    // Reset counters when scrolling back to the top
+    window.addEventListener('scroll', function () {
+        if (window.scrollY === 0) {
+            resetCounters();
+        }
+    });
+</script>
+
+    
     
     <script>
        // JavaScript code
