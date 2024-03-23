@@ -5,9 +5,10 @@
 
 ---
 
-# LandingIT Website
+# Landin_it_website
 
-![LandingIT Logo](link/to/logo.png)
+![image](https://github.com/rohitdotrayakwar/Landing_it_website/assets/153349651/b8538335-a37f-47f8-9b0a-c21ead829451)
+
 
 ## Overview
 
@@ -32,8 +33,8 @@ Welcome to the LandingIT Website repository! This repository contains the source
 
 To get a copy of the project up and running on your local machine, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/landingitwebsite.git`
-2. Navigate to the project directory: `cd landingitwebsite`
+1. Clone this repository: `git clone https://github.com/rohitdotrayakwar/Landing_it_website.git`
+2. Navigate to the project directory: `cd Landing_it_website`
 3. Open `index.html` in your web browser.
 
 ## Website
@@ -56,7 +57,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-If you have any questions or suggestions regarding the project, feel free to contact us at [contact@landingit.com](mailto:rohitdotrayakwar@gmail.com).
+If you have any questions or suggestions regarding the project, feel free to contact us at [rohitdotrayakwar@gmail.com](mailto:rohitdotrayakwar@gmail.com).
 
 ---
 
